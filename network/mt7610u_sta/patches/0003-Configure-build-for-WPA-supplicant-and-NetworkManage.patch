@@ -1,0 +1,28 @@
+From fd04908a3109f749bf079b74153351d0735cac58 Mon Sep 17 00:00:00 2001
+From: Jose Lopes <jabolopes@gmail.com>
+Date: Fri, 19 Jul 2019 00:04:48 +0200
+Subject: [PATCH 3/3] Configure build for WPA-supplicant and NetworkManager.
+
+
+diff --git a/os/linux/config.mk b/os/linux/config.mk
+index 1a061e6..3473da0 100644
+--- a/os/linux/config.mk
++++ b/os/linux/config.mk
+@@ -23,12 +23,12 @@ HAS_APCLI=n
+ 
+ # Support Wpa_Supplicant
+ # i.e. wpa_supplicant -Dralink
+-HAS_WPA_SUPPLICANT=n
++HAS_WPA_SUPPLICANT=y
+ 
+ 
+ # Support Native WpaSupplicant for Network Maganger
+ # i.e. wpa_supplicant -Dwext
+-HAS_NATIVE_WPA_SUPPLICANT_SUPPORT=n
++HAS_NATIVE_WPA_SUPPLICANT_SUPPORT=y
+ 
+ #Support Net interface block while Tx-Sw queue full
+ HAS_BLOCK_NET_IF=n
+-- 
+2.14.5
+
