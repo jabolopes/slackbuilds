@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+              |-----handy-ruler----------------------------------------------------|
+dotnet-hostfxr: dotnet-hostfxr (Microsoft .NET Core Host FX Resolver - 2.0.6)
+dotnet-hostfxr:
+dotnet-hostfxr: .NET Core is a development platform that you can use to build
+dotnet-hostfxr: command-line applications, microservices and modern websites. It is
+dotnet-hostfxr: open source, cross-platform and is supported by Microsoft.
+dotnet-hostfxr:
+dotnet-hostfxr:
+dotnet-hostfxr:
+dotnet-hostfxr:
+dotnet-hostfxr: Homepage:  https://github.com/dotnet/core
+dotnet-hostfxr:

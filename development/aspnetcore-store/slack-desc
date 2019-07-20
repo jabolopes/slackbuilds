@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                |-----handy-ruler----------------------------------------------------|
+aspnetcore-store: aspnetcore-store (Microsoft ASP.NET Core 2.0.6 Package Store)
+aspnetcore-store:
+aspnetcore-store: Runtime package store for Microsoft ASP.NET Core. It is open
+aspnetcore-store: source, cross-platform and is supported by Microsoft. We hope
+aspnetcore-store: you enjoy using it! If you do, please consider joining the
+aspnetcore-store: active community of developers that are contributing to the
+aspnetcore-store: project on GitHub (https://github.com/aspnet/home). We happily
+aspnetcore-store: accept issues and PRs.
+aspnetcore-store:
+aspnetcore-store: Homepage:  https://www.asp.net/
+aspnetcore-store:

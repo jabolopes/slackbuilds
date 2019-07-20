@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+           |-----handy-ruler------------------------------------------------------|
+mt7610u_sta: mt7610u_sta (RT2870 Wireless Lan Linux Driver)
+mt7610u_sta:
+mt7610u_sta: This is a linux device driver for Ralink RT2870 USB ABGN WLAN Card.
+mt7610u_sta:
+mt7610u_sta: Homepage: https://www.mediatek.com/products/broadbandWifi/mt7610u
+mt7610u_sta:
+mt7610u_sta:
+mt7610u_sta:
+mt7610u_sta:
+mt7610u_sta:
+mt7610u_sta:
