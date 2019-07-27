@@ -63,13 +63,9 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/mt7610u_wifi_sta_v3002_dpo_20130916.tar.bz2
-cd mt7610u_wifi_sta_v3002_dpo_20130916
 
-# Apply patches.
-patch -p1 < $CWD/patches/0001-Fix-build-by-fixing-kernel-types-and-compilation-err.patch
-patch -p1 < $CWD/patches/0002-Don-t-generate-tftpboot-in-root-directory-of-the-FS.patch
-patch -p1 < $CWD/patches/0003-Configure-build-for-WPA-supplicant-and-NetworkManage.patch
+git clone https://github.com/Myria-de/mt7610u_wifi_sta_v3002_dpo_20130916.git $PRGNAM-$VERSION
+cd $PRGNAM-$VERSION
 
 chown -R root:root .
 find -L . \
@@ -83,8 +79,8 @@ make
 mkdir -p $PKG/etc/Wireless/RT2870STA
 cp conf/RT2870STA.dat $PKG/etc/Wireless/RT2870STA/
 mkdir -p $PKG/lib/modules/$KERNEL/kernel/drivers/net/wireless/
-cp os/linux/mt7650u_sta.ko $PKG/lib/modules/$KERNEL/kernel/drivers/net/wireless/
-chmod 0644 $PKG/lib/modules/$KERNEL/kernel/drivers/net/wireless/mt7650u_sta.ko
+cp os/linux/mt7610u_sta.ko $PKG/lib/modules/$KERNEL/kernel/drivers/net/wireless/
+chmod 0644 $PKG/lib/modules/$KERNEL/kernel/drivers/net/wireless/mt7610u_sta.ko
 
 # Strip binaries and libraries - this can be done with 'make install-strip'
 # in many source trees, and that's usually acceptable if so, but if not,
@@ -98,6 +94,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 # Also, include the SlackBuild script in the documentation directory
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
+  README.md \
   README_STA_usb \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
