@@ -1,4 +1,4 @@
-PRGNAM="mt7610u_wifi_sta"
+PRGNAM="mt7610u_sta"
 VERSION="30.0.2"
 HOMEPAGE="https://www.mediatek.com/products/broadbandWifi/mt7610u"
 DOWNLOAD="https://d86o2zu8ugzlg.cloudfront.net/mediatek-craft/drivers/mt7610u_wifi_sta_v3002_dpo_20130916.tar.bz2"
